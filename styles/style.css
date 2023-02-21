@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1440px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial,  sans-serif;
+  background-color: #FFFFFF;
+  z-index: -5;
+  
+}
+
+.header{
+  width: 1440px;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  z-index: 1;
+}
+
+.header__table-navigation{
+  display: flex;
+  max-height: 100px;
+  height: 100%;
+  align-items: center;
+  flex-grow: 1;
+  z-index: 1;
+  color: #FFFFFF
+}
+
+.header__table-navigation-row{
+  text-align: center;
+
+}
+
+
+.header__table-navigation-row:last-of-type{ 
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.header__table-navigation-row:first-of-type{ 
+  margin-left: 81px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.header__table-cell {
+ width: 133px;
+ font-size: 12px;
+ line-height: 18px;
+ z-index: 1;
+}
+
+.header__main-illustration{
+  position: absolute;
+  z-index: 0;
+  
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+  background-image: url(../images/logo/Vector.png);
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 645px;
+  
+}
+
+
+.header__title{
+  max-width: 998px;
+  font-size: 96px;
+  line-height: 96px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  z-index: 1;
+  font-family: "banny";
+}
+
+
+
+.header__subtitle{
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+  margin: auto auto 0;
+  width: 100%;
+  font-family: "caption";
+}
+
+.header__date{
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+  transform: rotate(-90deg);
+  font-weight: 700;
+  font-family: 'Open Sans';
+  top: 70%;
+}

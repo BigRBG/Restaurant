@@ -1,16 +1,7 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1440px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial,  sans-serif;
   background-color: #FFFFFF;
   z-index: -5;
@@ -29,6 +20,10 @@
   z-index: 1;
 }
 
+.content{
+  width: 1440px;
+}
+
 .header__table-navigation{
   display: flex;
   max-height: 100px;
@@ -36,7 +31,8 @@
   align-items: center;
   flex-grow: 1;
   z-index: 1;
-  color: #FFFFFF
+  color: #FFFFFF;
+  padding: 0;
 }
 
 .header__table-navigation-row{
@@ -60,6 +56,11 @@
  font-size: 12px;
  line-height: 18px;
  z-index: 1;
+
+}
+.header__link{
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .header__main-illustration{
@@ -85,23 +86,31 @@
   max-width: 998px;
   font-size: 96px;
   line-height: 96px;
-  margin: 0 auto;
+  margin: 0;
   color: #FFFFFF;
   z-index: 1;
   font-family: "banny";
+  position: absolute;
+  top: 356px;
+  left: 306px;
+  
 }
 
 
 
 .header__subtitle{
+  font-family: 'Open Sans';
+  letter-spacing: 0.5em;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
   color: #FFFFFF;
   z-index: 1;
-  margin: auto auto 0;
   width: 100%;
   font-family: "caption";
+  position: absolute;
+  margin: 0;
+  top: 40%;
 }
 
 .header__date{
@@ -114,5 +123,181 @@
   transform: rotate(-90deg);
   font-weight: 700;
   font-family: 'Open Sans';
-  top: 70%;
+  top: 50%;
+}
+
+.Header__button{
+  max-width: 200px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 52%;
+  color:#FFFFFF;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+
+}
+
+.Header__button_yellow{
+  background-color: #E8C300;
+  z-index: 1;
+  left: 35%;
+  border: 0;
+}
+.Header_button:hover {
+  
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+  
+  
+}
+
+.ABOUT{
+  min-width: 1280px;
+  min-height: 475px;
+  padding: 100px 80px 200px 80px;
+  display: flex;
+  position: relative;
+}
+.ABOUT__text{
+  text-align: center;
+  max-width: 600px;
+  min-height: 241px;
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ABOUT__image{
+  width: 475px;
+  height: 475px;
+}
+
+.ABOUT__Geometry{
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;
+  position: absolute;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  top: 213px;
+  right: 79px;
+}
+
+
+.text-title{
+  max-width: 1280px;
+  width: 100%;
+  min-height: 137px;
+  padding: 0 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section__title{
+  font-family: 'Banny';
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 5px;
+}
+
+.section-text{
+  margin: 0;
+}
+
+.section__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  max-width: 565px;
+  margin: 10px 0 20px;
+}
+
+.Line_orange{
+  width: 62px;
+  height: 5px;
+  background-color: #E8C300;
+  border-radius: 50px;
+}
+
+.MainMenu__Food-row{
+  max-width: 840px;
+  width: 100%;
+  min-height: 50px;
+  padding: 50px 300px;
+  display: flex;
+  list-style-type: none;
+}
+
+.MainMenu__Food-row_Cell{
+  max-width: 120px;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line_vertical{
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.MaimMenu__Food-table{
+  padding: 0 80px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.MainMenu__Food-table_row{
+  max-width: 363px;
+  min-height: 432px;
+  border-spacing: 80px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+
+}
+
+.MainMenu__Cell{
+  max-width: 363px;
+  min-height: 66px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Banny';
+  font-weight: 400;
+  color: #333333
+}
+
+.subtext{
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Open Sans';
+  margin: 0;
+  color: #33333380;
+
 }
